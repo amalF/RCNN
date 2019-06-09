@@ -79,14 +79,12 @@ class Cifar10DataSet(DataSet):
             train_indexes = indexes[:45000]
             train_images = train_data[0][train_indexes,:,:,:]
             train_labels = train_data[1][train_indexes,:]
-            print("TRain ", train_images.shape, train_labels.shape)
             data = (train_images, train_labels)
             self.num_samples = len(train_images)
         elif subset == "valid":
             val_indexes = indexes[45000:]
             val_images = train_data[0][val_indexes,:,:,:]
             val_labels = train_data[1][val_indexes,:]
-            print("Val ", val_images.shape, val_labels.shape)
             data = (val_images, val_labels)
             self.num_samples = len(val_images)
         elif subset == "test":

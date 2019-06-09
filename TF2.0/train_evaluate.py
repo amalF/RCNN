@@ -184,16 +184,16 @@ def main(modelname,
             print('Validation acc: %s' % (float(val_acc),))
 
     ############################## Test the model #############################
-    with test_summary_writer.as_default():
-        for x_batch, y_batch in test_dataset:
-            test_logits = network(x_batch, training=False)
-            # Update test metrics
-            test_acc_metric(y_batch, test_logits)
+        with test_summary_writer.as_default():
+            for x_batch, y_batch in test_dataset:
+                test_logits = network(x_batch, training=False)
+                # Update test metrics
+                test_acc_metric(y_batch, test_logits)
 
-        test_acc = test_acc_metric.result()
-        tf.summary.scalar("accuracy", test_acc, step=epochs)
-        test_acc_metric.reset_states()
-        print('Test acc: %s' % (float(test_acc),))
+            test_acc = test_acc_metric.result()
+            tf.summary.scalar("accuracy", test_acc, step=ep)
+            test_acc_metric.reset_states()
+            print('Test acc: %s' % (float(test_acc),))
 
 if __name__=="__main__":
     main()
