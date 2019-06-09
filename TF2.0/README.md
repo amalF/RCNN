@@ -1,13 +1,13 @@
-#Recurrent Convolutional Neural Network for Object Recognition using TF2.0
+# Recurrent Convolutional Neural Network for Object Recognition using TF2.0
 
 **Disclaimer**
 I'm still running experiments to make sure the code is working as intended.
 
-##Before starting
+## Before starting
 This code was tested using Python 3.6 and Tensorflow 2.0
 All the dependencies are in the requirement.txt file
 
-##Training
+## Training
 As a baseline, I implemented the WCNN described in the paper.
 Two types of normalization are tested for the recurrent convolution layer
 : batch normalization and local response normalization.
@@ -16,10 +16,10 @@ batch normalization.
 
 I trained the networks for 100 epochs.
 
-##Contact
+## Contact
 amal.feriani@gmail.com
 
-##Licence
+## Licence
 MIT
 
 
