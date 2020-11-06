@@ -23,10 +23,7 @@ connections are added and skip connections show great impact on the
 performance. RCNN is introducing local recurrent connections. A [recent
 paper](https://papers.nips.cc/paper/7775-task-driven-convolutional-recurrent-models-of-the-visual-system.pdf) added both types of recurrent conenctions to a feedforward CNN to mimic the dynamic of visual system.
 
-##Contact
-amal.feriani@gmail.com
-
-##Licence
+## Licence
 MIT
 
 
